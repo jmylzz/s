@@ -1,0 +1,72 @@
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		.div1{
+		border: 4px dotted red;
+	    }
+	    .div2{
+	    	background-size: cover;
+	    	background-image:url(img/在一起.jpg);
+	   }
+		a:link {color:#000000;}     
+        a:visited {color: dodgerblue;} 
+        a:hover {color: cadetblue;} 
+        a:active {color: mintcream;}
+		</style>
+		<script>
+			function createA(){
+			var div=document.getElementById("div1"),newA=document.createElement("A");
+			 div.appendChild(newA);
+			 newA.innerHTML="<br />"+"刷一刷我的底线吧";
+             newA.setAttribute("href","#");			 
+			}
+			
+			function deleteP(){
+				var div=document.getElementById("div1");
+				var y=div.childNodes;
+				for (i=0;i<y.length;i++)
+				{
+	            	if(y[i].tagName=="P") div.removeChild(y[i]);
+	            }
+			}
+			function deleteA(){
+				var div=document.getElementById("div1");
+				var y=div.childNodes;
+				var loop=y.length;
+				for (i=loop-1;i>=0;i--)
+				{
+					if (y[i].tagName=="A") div.removeChild(y[i]);
+				}
+			}
+			function changeAllColor(){
+				var div=document.getElementById("div1");
+				var y=div.childNodes;
+				var loop=y.length;
+				for (i=0;i<loop;i++){
+					if(y[i].tagName=="P"||y[i].tagName=="A")
+					y[i].style.color="cyan";
+				}
+				
+			}
+		</script>
+	</head>
+	<body>
+	<div class="div2">
+	  <div id="div1" class="div1"> 
+		<p id="p1" onclick="test()"><a href="http://sh.qihoo.com/pc/99ba46e768742f69a?
+			cota=1&refer_scene=so_1&sign=360_e39369d1" target="_blank">挑战你忍耐力的时候到了。</a>  </p>
+		<p id="p2" onclick="test()">想不想看看这张图究竟是什么？</p>
+		<p id="p3" onclick="test()">一起来看看吧！</p>
+      </div>
+		<button onclick="createA()">继续点吧（增加A）</button>
+		<button onclick="deleteA()">别放弃啊（删除A）</button>
+		<button onclick="deleteP()">不想玩了（删除P）</button>
+		<button onclick="changeAllColor()">好优秀啊（变色）</button>
+	</div>
+	</body>
+</html>
