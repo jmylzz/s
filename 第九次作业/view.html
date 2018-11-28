@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			body {
+				font-family: "Microsoft Yahei";
+				font-size: 14px;
+				color: #333;
+			}
+			
+			a,
+			a:hover {
+				text-decoration: none;
+				color: #333;
+			}
+			
+			ul,
+			li {
+				list-style: none;
+			}
+			
+			
+			
+			.tab {
+				width:100%;/*整体宽度*/
+				margin: 30px auto;
+			}
+			
+			.tab-title {
+			/*上面的一层*/
+		  	height: 80px;
+				font-size:0px;
+				background-color:  cornsilk;
+			}
+			
+			.tab-title .item {
+				display: inline-block;
+				width: 250px;/*导航框各框宽度*/
+				height:80px;
+				line-height: 66px;
+				text-align: center;
+				color: #333;
+				font-size: 22px;/*导航框字体大小*/
+			}
+			
+			.tab-title .item-cur {
+				/*标题颜色及背景颜色*/
+				color: #DD8800;
+				background-color:  antiquewhite;
+			}
+			
+			
+			
+		
+		
+		
+			.tab-cont {
+				/*下面*/
+				position: relative;
+				background-color: #DD8800;/*主体背景颜色*/
+				width: 100%;
+				height: 500px;
+				overflow: hidden;
+			}
+			
+			.tab-cont__wrap {
+				position: absolute;
+			}
+			
+			.tab-cont .item {
+				width: 1600px;
+				height: 500px;
+				line-height: 100px;
+				text-align: left;
+				color: #CCCCFF;/*主体字体颜色*/
+			}
+		
+		</style>
+
+	</head>
+
+	<body>
+		<script src="/demos/googlegg.js"></script>
+
+		<div class="tab" js-tab="2">
+			<div class="tab-title">
+				<a href="javascript:;" class="item item-cur">项目名称及发起人</a>
+				<a href="javascript:;" class="item">项目概况及介绍</a>
+				<a href="javascript:;" class="item">市场背景及评估</a>
+				<a href="javascript:;" class="item">运营及营销计划</a>
+				<a href="javascript:;" class="item">收入及利润预测</a>
+			</div>
+			<div class="tab-cont">
+				<ul class="tab-cont__wrap">
+					
+					<li class="item"  style="background-image: url(img/f.jpg);background-size:555px 600px;background-repeat: no-repeat;">
+				
+					<p>	<h1 align="center">项目名称：<sub>时光属地(给未来的自己)</sub></h1>	</p>
+				 <p><h2 align="middle">个人简介：</h2></p>	
+					<p><h3 align="center"><b>李志正，</b>他来自一个可爱的班级——网二，2000年中国制造，长178cm，净重**。</h3></p>
+						<p><h3 align="center">采用人工智能，各部分零件齐全，运行十八年，质量棒棒的。</h3></p>
+							<p><h3 align="center">爱吃零食，喜欢游戏，没事就喜欢懒一点。</h3></p>
+					</li>
+					
+					<li class="item">
+						<h2 align="center" >柏拉图曾说过：时间会带走一切，长年累月会把你的名字，外貌，性格，命运都改变。</h2>
+						<h2>人们的消费不再基于物质，更集中于精神，基于此，是不是可以发挥我们的力量，让未来的自己能见一见现在的我们呢？</h2>
+					 <h1 align="center">于是，就有了我们这"给未来自己..."等系列项目</h1>
+					<h2>在我们的  时光属地  ，你可以给未来的自己送点快递</h2>
+				  <h1  align="center">信，VCR，物品......只有你想不到  没有我们办不到</h1>
+					</li>
+					
+					<li class="item "style="background-image: url(img/i.gif);background-size:800px 500px;background-repeat: no-repeat;">
+						<h2 align="center">我们的实力</h2>
+						<h1 align="center">就是我们最好的标签</h1>
+					</li>
+					
+					<li class="item" style="background-image: url(img/h.jpg);background-size:1400px 600px;background-repeat: no-repeat;">
+						</li>
+					
+					<li class="item" style="background-image: url(img/e.jpg);background-size: 1300px 500px;"></li>
+				</ul>
+			</div>
+		</div>
+
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/tab.js"></script>
+		<script>
+			$(function() {
+
+				/**
+	=========== 参数说明 ============
+	curDisplay: 当前显示哪张
+	mouse: 鼠标事件 (click/over)
+	changeMethod: 切换方式 (default/vertical/horizontal/opacity)
+	autoPlay: 自动播放 (true/false)
+   */
+
+				// 多个元素同一个变化方式
+				/*$('.tab').each(function () {
+	$(this).tab({
+	  curDisplay: 5,
+	  mouse: 'over',
+	  changeMethod: 'vertical'
+	});
+  });*/
+
+				// 多个元素不同变化方式（需要在HTML中加入js-tab）
+				$('[js-tab=1]').tab();
+
+				$('[js-tab=2]').tab({
+					curDisplay: 2,
+					changeMethod: 'horizontal'
+				});
+
+			});
+		</script>
+
+		
+	</body>
+
+</html>
