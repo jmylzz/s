@@ -1,0 +1,287 @@
+<!DOCTYPE HTML>
+<html>
+	<meta charset="UTF-8">
+	<head>
+		<title>时光邮局</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		<link href="css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+   		 <!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!----webfonts--->
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+		<!---//webfonts--->
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+	    <style>
+	     .wenzhang {
+	     	background-image:url(images/z1.png) ;
+	        background-repeat:no-repeat ;
+	        background-size:90% ;
+	        width: 1200px;
+	     	height: 600px;
+	     }    	
+	    .liucheng {
+	    	background-image: url(images/流程.jpg);
+	        background-repeat:no-repeat ;
+	        background-size:100% ;
+	    	width: 400px;
+	    	height: 550px;
+	    }
+	    	
+	    </style>
+	</head>
+	<body>
+		<!----- 111111---->
+			<div id="home" class="header">
+					<div class="top-header">
+						<div class="container">
+						<div class="logo">
+							<a href="#">初心的时光属地 </a>
+						</div>
+						<!----start-top-nav---->
+						 <nav class="top-nav">
+							<ul class="top-nav">
+								<li class="active"><a href="#home" class="scroll">不忘初心 </a></li>
+								<li class="page-scroll"><a href="#work" class="scroll">时光长廊</a></li>
+								<li class="page-scroll"><a href="#team" class="scroll">慢慢时光</a></li>
+								<li class="contatct-active" class="page-scroll"><a href="#contact" class="scroll">联系我们</a></li>
+							</ul>
+							<a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+			</div>
+			<!----111111---->
+			<!----222222---->
+			<div class="banner text-center">
+				<div class="container">
+					<div class="banner-info">
+						<h1 style="font-size: 100px;"><a href="时光信箱.html" target="_blank"><span><sup>时光</sup><sub>邮局</sub></span></a></h1>
+						<h2>做一个信使将梦想送往未来</h2> 
+						<p>把每一年的字字句句收集起来，成为一个更棒的自己。</p>
+						<label class="page-scroll"><a class="big-btn scroll" href="#work1"><span> </span></a></label>
+					</div>
+				</div>
+			</div>
+			<!----222222---->
+			<!----333333--->
+			<div id="work" class="work">
+				<div id="work1" class="container">
+					<div class="head-one text-center">
+						<h2>时光剪影</h2>
+						<span> </span>
+						<p>时光的长廊里，剪影了相遇的痕迹</p>
+					</div>
+					<!---works--->
+					<!---images-hover-effects--->
+					<script src="js/jquery.hoverGrid.js"></script>
+					<link rel="stylesheet" type="text/css" href="css/jquery.hoverGrid.css">
+					<script type="text/javascript">
+					    $(document).ready(function() {
+					      $('#whatever').hoverGrid();
+					    });
+					</script>
+					<!---images-hover-effects--->
+					<div class="tlinks">欢迎来到 <a href="https://jmylzz.github.io/s/"  title="网站模板">我的网站</a></div>
+					<div class="works">
+							<div id="whatever">
+								<div class="col-md-4 work-grid">
+								    <div class="item">
+								        <img  src="images/w1.jpg" title="name"/>
+								        <div class="caption" style="display: none;">
+								            <h2>one</h2>
+								            <p>一帆风顺</p>
+								        </div>
+								    </div>  
+							    </div>  
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+								        <img  src="images/w2.jpg" title="name" />
+								        <div class="caption" style="display: none;">
+								            <h2>two</h2>
+								            <p>二龙腾飞</p>
+								        </div>
+								    </div>  
+							    </div>    
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+								        <img  src="images/w3.jpg" title="name" />
+								        <div class="caption" style="display: none;">
+								            <h2>three</h2>
+								            <p>三阳开泰</p>
+								        </div>
+								    </div>  
+							    </div>    
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+								        <img  src="images/w4.jpg" title="name" />
+								        <div class="caption" style="display: none;">
+								            <h2>four</h2>
+								            <p>四平八稳</p>
+								        </div>
+								    </div>  
+							    </div>    
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+								        <img  src="images/w5.jpg" title="name" />
+								        <div class="caption" style="display: none;">
+								            <h2>five</h2>
+								            <p>五福临门</p>
+								        </div>
+								    </div>  
+							    </div>    
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+								        <img  src="images/w6.jpg" title="name" />
+								        <div class="caption" style="display: none;">
+								            <h2>six</h2>
+								            <p>六六大顺</p>
+								        </div>
+								    </div>  
+							    </div>    
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+								        <img  src="images/w7.jpg" title="name" />
+								        <div class="caption" style="display: none;">
+								            <h2>seven</h2>
+								            <p>七步成章</p>
+								        </div>
+								    </div>  
+							    </div>    
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+								        <img  src="images/w8.jpg" title="name" />
+								        <div class="caption" style="display: none;">
+								            <h2>eight</h2>
+								            <p>八面顺风</p>
+								        </div>
+								    </div>  
+							    </div>    
+							    <div class="col-md-4 work-grid">
+								    <div class="item">
+								        <img  src="images/w9.jpg" title="name" />
+								        <div class="caption" style="display: none;">
+								            <h2>nine</h2>
+								            <p>九九归一</p>
+								        </div>
+								    </div>  
+							    </div>  
+							    <div class="clearfix"> </div>               
+							</div>
+					</div>
+					 <div class="clearfix"> </div>   
+					</div>
+				</div>
+					<!---333333--->
+					<!---444444--->
+					<div id="team" class="team">
+						<div class="container">
+							<div class="head-one text-center team-head">
+								<h2>慢时光</h2>
+								<span> </span>
+								<p>让时光慢下来，一起欣赏一封时光信吧</p>
+							</div>	
+							<div class=" wenzhang"></div>
+							
+						</div>
+					</div>
+					<!---444444--->
+					<!---555555--->
+					<div id="contact" class="contact">
+						<div class="container">
+							<div class="head-one text-center">
+								<h2><a href="使用帮助.html" target="_blank">contact</a></h2>
+								<span> </span>
+							</div>
+							<div class="contact-grids">
+								<div class="col-md-5 contact-map">
+								<br />
+								<p>心动不如行动，赶快来加入我们吧</p>
+								<br /><br /><br />
+								<div class="liucheng"></div>
+								</div>
+								<div class="col-md-7 contact-form">
+								<p>时光邮件，竭诚为您服务</p>	
+								<form>
+									<textarea>Leave us a message...</textarea>
+									
+									<input type="text" value="Your@mail.com">
+									<input type="submit" value="Send" />
+								</form>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+					<!---555555--->
+					<!---666666--->
+					<div class="footer">
+						<div class="container">
+							<div class="footer-left">
+								<p><span>Adress:</span> The Time Address </p>
+							</div>
+							，<br />
+							<div class="footer-right">
+								<p>Copyright &copy; 2018.Company name All rights reserved.More Templates <a href="http://www.qq.com/" target="_blank" title="模板之家"></a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank"></a></p>
+								<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+									<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+					<!---666666--->
+				</div>
+			</div>
+
+</body>
+</html>
